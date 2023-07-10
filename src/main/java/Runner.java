@@ -8,29 +8,55 @@ public class Runner {
 
 //        SCOTTISH ISLANDS
         List<String> scottishIslands = new ArrayList<>();
+        scottishIslands.add("Tiree");
         scottishIslands.add("Jura");
+        scottishIslands.add("Islay");
         scottishIslands.add("Mull");
         scottishIslands.add("Skye");
         scottishIslands.add("Arran");
         scottishIslands.add("Tresco");
+        scottishIslands.add("Coll");
 
-//        1. Add "Coll" to the end of the list
-//        2. Add "Tiree" to the start of the list
-//        3. Add "Islay" after "Jura" and before "Mull"
-//        4. Print out the index position of "Skye"
-//        5. Remove "Tresco" from the list by name
-//        6. Remove "Arran" from the list by index
-//        7. Print the number of islands in your arraylist
-//        8. Sort the list alphabetically
-//        9. Print out all the islands using a for loop
+
+        System.out.println(scottishIslands.indexOf("Skye"));
+        scottishIslands.remove("Tresco");
 
         System.out.println(scottishIslands);
 
-//        NUMBERS
-        List<Integer> numbers = new ArrayList<>();
-        Collections.addAll(numbers, 1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7);
+        scottishIslands.remove(scottishIslands.indexOf("Arran"));
 
-        System.out.println("numbers: " + numbers);
+        String firstscottishIslands = scottishIslands.get(0);
+        System.out.println("first scottish Islands:" + firstscottishIslands);
+        System.out.println("number of scottish Islands:" + scottishIslands.size() );
+
+        Collections.sort(scottishIslands, String.CASE_INSENSITIVE_ORDER);
+
+
+        ArrayList<String> allIslands = new ArrayList<>();
+        for (String allIsland : allIslands){
+
+        }
+        System.out.println(scottishIslands);
+
+
+
+//        1. Add "Coll" to the end of the list✅
+//        2. Add "Tiree" to the start of the list✅
+//        3. Add "Islay" after "Jura" and before "Mull"✅
+//        4. Print out the index position of "Skye"✅
+//        5. Remove "Tresco" from the list by name✅
+//        6. Remove "Arran" from the list by index✅
+//        7. Print the number of islands in your arraylist✅
+//        8. Sort the list alphabetically✅
+//        9. Print out all the islands using a for loop✅
+
+                System.out.println(scottishIslands);
+
+//        NUMBERS
+            List<Integer> numbers = new ArrayList<>();
+            Collections.addAll(numbers, 1, 1, 4, 2, 7, 1, 6, 15, 13, 99, 7);
+
+            System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers
 //        2. Print the difference between the largest and smallest value
@@ -42,6 +68,7 @@ public class Runner {
 //
 //          So [2, 7, 13, 2] would have sum of 9.
 
+        }
+
     }
 
-}
